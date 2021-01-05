@@ -1,0 +1,217 @@
+:root 
+{
+    
+    --color-primary-0 :#3DCF3D ;
+    --color-primary-1 :#8EEB8E ;
+    --color-primary-2 :#60DD60 ;
+    --color-primary-3 :#1CC31C ;
+    --color-primary-4 :#099C09 ;
+
+    --color-secondary-1-0 :#4A4AB8 ;
+    --color-secondary-1-1 :#9595E1 ;
+    --color-secondary-1-2 :#6969CB ;
+    --color-secondary-1-3 :#2F2FAB ;
+    --color-secondary-1-4 :#1B1B89 ;
+
+    --color-secondary-2-0 :#FFEF4C ;
+    --color-secondary-2-1 :#FFF69A ;
+    --color-secondary-2-2 :#FFF26F ;
+    --color-secondary-2-3 :#F4E123 ;
+    --color-secondary-2-4 :#C3B20B ;
+
+    font-size: 24px;
+    font-family: "Open Sans";
+    color: black;
+}
+
+.flex-row
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-filler
+{
+    flex: 1 0 0px;
+}
+
+.flex-wrap
+{
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.align-center
+{
+    align-items: center;
+}
+
+html, body
+{
+    margin: 0;
+}
+
+body
+{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background : linear-gradient(
+        140deg,
+        var(--color-secondary-1-2),
+        var(--color-secondary-1-0),
+        var(--color-secondary-1-3)
+    )
+    
+    
+
+    
+}
+
+.card 
+{
+    overflow: hidden;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 5px 1rem rgba(0,0,0,0.2);
+    background-color: #FAFAFA;
+    border-radius: 20px;
+}
+
+section 
+{
+    margin: 1rem;
+}
+
+.menu
+{
+    padding: 0;
+    border-radius: 0px !important;
+}
+
+.menu span
+{
+    padding: 0.5rem 1rem;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+.menu .clickable:hover
+{
+    background-color: rgba(0,100,0,0.1);
+}
+
+.list-subject
+{
+    background-color: rgba(0,0,0,0);
+    padding: 0.1rem 1rem;
+    transition: all ease 100ms;
+}
+.list-subject:hover
+{
+    background-color: rgba(0,100,0,0.1);
+    padding: 0.2rem 1rem;
+}
+
+ul.no-style, ol.no-style
+{
+    list-style: none;
+    padding: 0;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.button
+{
+    width: max-content;
+    font-size: 0.8rem;
+    background-color: var(--color-primary-0);
+    border: none;
+    color: white !important;
+    text-decoration: none !important;
+    border-radius: 0.2rem;
+    padding: 0.6rem 2rem;
+    box-shadow: 0px 5px 1rem rgba(0,0,0,0.2);
+    margin-top: 0rem;
+    margin-bottom: 0.1rem;
+    transition: all 100ms ease;
+    cursor: pointer;
+}
+
+.button:hover
+{
+    box-shadow: 0px 5px 1rem rgba(0,0,0,0);
+    margin-top: 0.1rem;
+    margin-bottom: 0rem;
+}
+
+input, textarea
+{
+    font-size: 1rem;
+    border-radius: 0.2rem;
+    color: #666;
+    box-shadow: 0px 5px 1rem rgba(0,0,0,0);
+    transition: all 300ms ease;
+}
+
+input:focus, textarea:focus
+{
+    box-shadow: 0px 5px 1rem rgba(0,0,0,0.2);
+}
+
+textarea
+{
+    padding: 1rem;
+    min-height: 40vh;
+    resize: none;
+    border: solid 1px #AAA;
+}
+
+input.form-control
+{
+    max-width: 100px;
+    padding: 0.3rem;
+    border: solid 1px #AAA;
+}
+
+label
+{
+    margin-right: 1rem;
+}
+
+h1
+{
+    font-size: 2rem;
+    margin: 1rem;
+}
+h1, h2, h3 { width: max-content; }
+
+
+a, a:visited
+{
+    color: var(--color-secondary-1-0);
+}
+
+.full-width { width: 100%; }
+
+.clickable { cursor: pointer;}
+.primary { color: var(--color-primary-0); }
+.secondary { color: var(--color-secondary-1-0); }
+.white { color: white; }
+
+.etiquette-primary { background-color: var(--color-primary-0); color: white; padding: 0.2rem 1rem;}
+.etiquette-secondary { background-color: var(--color-secondary-1-0); color: white; padding: 0.2rem 1rem;}

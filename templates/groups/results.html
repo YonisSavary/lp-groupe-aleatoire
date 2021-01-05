@@ -1,0 +1,37 @@
+{% extends base %}
+
+{% block content %}
+<section class="flex-column">
+    <section class="flex-row align-center">
+        <h1 class="white">Résultats</h1>
+        <section class="flex-filler"></section>
+        <a class="button" href="{% url "index" %}">Retour</a>
+    </section>
+    <section class="flex-row flex-wrap flex-filler">
+    {% for i_group in groups %}
+        <article class="group-section card">
+            <h2>Groupe {{ index }}</h2>
+            <ol id="group-{{ index }}" class="no-style">
+            {% for subject in i_group %}
+                <li class="clickable list-subject">
+                    {% for fieldname in fields %}
+                        {% if fieldname != "Civilité" %}
+                            {{ subject.fieldname }}
+                        {% endif %}
+                    {% endfor %}
+                </li>
+            {% endfor %}
+            </ol>
+        </article>
+    {% endfor %}
+    </section>
+    <section id="contextual-menu" class="menu card flex-column">
+        <span>Déplacer vers</span>
+        {% for i_group in groups %}
+            <span class="cmenu-item clickable" target="#group-{{ index }}">Groupe {{ index }}</span>
+        {% endfor %}
+    </section>
+    <script src="{% static "js/jquery.js" %}"></script>
+    <script src="{% static "js/group_manager.js" %}"></script>
+</section>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends base %}
+
+{% block content %}
+<section class="card">
+    <h1>Création de groupes aléatoires</h1>
+    <form method="POST" action="{% url 'post_create' %}" class="flex-column">
+        <textarea name="gdata" placeholder="Collez votre contenu CSV ici"></textarea>
+        <section class="flex-row flex-filler align-center">
+            <label for="group-size">Taille Groupe : </label>
+            <input id="group-size" value="1" name="gsize" class="form-control" min="1" type="number">
+            <div class="flex-filler"></div>
+            <input type="submit" class="button" value="Envoyer">
+        </section>
+    </form>
+</section>
+{% endblock %}

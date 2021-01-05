@@ -1,0 +1,12 @@
+{
+    "/": {
+        "target": "GroupController::index",
+        "name": "index"
+    },
+
+    "/post": {
+        "target": "GroupController::create",
+        "name": "post_create",
+        "methods" : ["POST"]
+    }
+}

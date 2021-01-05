@@ -1,0 +1,6 @@
+{
+    "TEMPLATE_DIR" : "..\\templates",
+    "INCLUDES_DIR" : ["includes"],
+    "STATIC_URL" : "assets",
+    "ERROR_DIR" : "errors"
+}
